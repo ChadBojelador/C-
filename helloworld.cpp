@@ -2,23 +2,20 @@
 #include <ctime>
 
 int main (){
+       
+        srand(time(0));
+        int randNum = (rand() % 10) + 1;
+        int number;
 
-    srand(time (0));
-    int randNum = (rand()%5)+1;
+        std::cout<<"***********GUESS THE NUMBER***************"<<'\n';
 
-    switch(randNum){
+        std::cout<< "Guess the number from 1-10: "<< '\n';
+        std::cin >> number;
 
-        case 1: std::cout << "You win a bumper sticker\n";
-                break;
-        case 2:std::cout << "You win a bumper shirt\n";
-                break;
-        case 3:std::cout << "You win a bumper cup\n";
-                break;
-        case 4:std::cout << "You win a bumper lunch\n";
-                break;
-        case 5:std::cout << "You win a bumper tickets\n";
-                break;
-    }
-    
-    return 0;
+        if(!(number==)){
+                std::cout<<"Yo've guessed the correct number";
+        }
+        else if(number==string){
+
+        }
 }
